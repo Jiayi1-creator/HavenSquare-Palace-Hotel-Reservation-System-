@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Confirmation</title>
+  <link rel="stylesheet" href="css/external_css_styling.css">
+  <link rel="stylesheet" href="css/confirmation_styling.css" />
+  <script src="javascript/confirmation.js" ></script>
+  <script src="javascript/script.js" ></script>
+  <link rel="icon" href="images/link_icons/confirmation.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <!--HEADER-->
+  <header>
+
+    <!--Top Navigation Bar-->
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+
+      <a href="index.html" class="logo"></a> 
+
+      <ul class="nav-right">
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <div class="hamburger-pane">
+      <div class="close-btn" onclick="toggleMenu()">×</div>
+      <ul class="hamburger-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signup.html">Sign Up / Log In</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+
+  <!--MAIN CONTENT-->
+  <main class="confirmation-page-main">
+    <section class="confirmation-section">
+      <div class="container">
+
+        <img src="images/link_icons/confirmation.png" alt="Booking Success" class="confirmation-icon" />
+
+        <h1 class="confirmation-title">Booking Confirmed!</h1>
+        <p class="confirmation-message">
+          Thank you for your booking with HavenSquare Palace!<br />
+          We look forward to welcoming you.
+        </p>
+
+        <div class="booking-details-card">
+          <h2>Your Booking Details</h2>
+          <div class="detail-item">
+            <span>Check-in Date:</span>
+            <span id="display-checkin">-</span>
+          </div>
+          <div class="detail-item">
+            <span>Check-out Date:</span>
+            <span id="display-checkout">-</span>
+          </div>
+          <div class="detail-item">
+            <span>Guests:</span>
+            <span id="display-guests">-</span>
+          </div>
+          <div class="detail-item">
+            <span>Room Type:</span>
+            <span id="display-room-type">-</span>
+          </div>
+          <div class="detail-item total-price">
+            <span>Total Price:</span>
+            <span id="display-total-price">RM 0.00</span>
+          </div>
+        </div>
+
+        <div class="confirmation-actions">
+          <a href="index.html" class="back-home-btn">Back to Home</a>
+          <button class="print-booking-btn" onclick="window.print()">Print Confirmation</button>
+        </div>
+
+        <div class="next-steps">
+          <h3>What Happens Next?</h3>
+          <ul>
+            <li>📧 A confirmation email has been sent to you</li>
+            <li>🛎 Please arrive 15 minutes before check-in</li>
+            <li>📞 Contact us <a href="contact.html">here</a> if you face any issues </a></li></li>
+          </ul>
+        </div>
+
+        <p class="further-info">
+          If you have any questions, please contact us at <a href="contact.html">here</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+
+  <!--FOOTER-->
+  <footer class="bottom-bar">
+    <div class="footer-row">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Company Logo">
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h3>Location</h3>
+          <p>HavenSquare Palace, <br>123 Oak Road, New York, <br>New York State 10036, <br>United States</p>
+        </div>
+
+        <div>
+          <h3>Follow Us</h3>
+          <p>Instagram | Facebook</p>
+        </div>
+
+        <div>
+          <a href="contact.html" class="contact-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2025 HavenSquare Palace</span>
+      <span class="footer-policy">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Service</a>
+      </span>
+    </div>
+  </footer>
+
+</body>
+</html>

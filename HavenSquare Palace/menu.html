@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HavenSquare Palace Restaurant Menu</title>
+  <link rel="stylesheet" href="css/external_css_styling.css">
+  <link rel="stylesheet" href="css/menu_css_styling.css">
+  <script src="javascript/script.js" ></script>
+  <link rel="icon" href="images/link_icons/menu.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+  <!--HEADER-->
+  <header>
+
+    <!--Top Navigation Bar-->
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+
+      <a href="index.html" class="logo"></a> 
+
+      <ul class="nav-right">
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <div class="hamburger-pane">
+      <div class="close-btn" onclick="toggleMenu()">×</div>
+      <ul class="hamburger-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signup.html">Sign Up / Log In</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+
+  <!--MAIN CONTENT-->
+  <main>
+    <h1>HavenSquare Palace Restaurant Menu</h1>
+
+    <!--Appetizers-->
+    <table>
+      <caption>Appetizers</caption>
+      <tr>
+        <th>Item</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td><img src="images/services_images/restaurant_images/garlic_bread.jpg" alt="Garlic Bread" class="dish-image"></td>
+        <td>Garlic Bread</td>
+        <td>Toasted bread with garlic butter and herbs</td>
+        <td class="price">RM8.00</td>
+      </tr>
+      <tr>
+        <td><img src="images/services_images/restaurant_images/spring_rolls.jpg" alt="Spring Rolls" class="dish-image"></td>
+        <td>Spring Rolls</td>
+        <td>Vegetable-filled rolls with sweet chili dip</td>
+        <td class="price">RM12.00</td>
+      </tr>
+    </table>
+
+
+    <!--Main Courses-->
+    <table>
+      <caption>Main Courses</caption>
+      <tr>
+        <th>Item</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td><img src="images/services_images/restaurant_images/grilled_chicken.jpg" alt="Grilled Chicken" class="dish-image"></td>
+        <td>Grilled Chicken</td>
+        <td>With mashed potatoes and seasonal veggies</td>
+        <td class="price">RM25.00</td>
+      </tr>
+      <tr>
+        <td><img src="images/services_images/restaurant_images/vegetarian_pasta.jpg" alt="Vegetarian Pasta" class="dish-image"></td>
+        <td>Vegetarian Pasta</td>
+        <td>Penne in tomato basil sauce with zucchini</td>
+        <td class="price">RM20.00</td>
+      </tr>
+    </table>
+
+
+    <!--Drinks-->
+    <table>
+      <caption>Drinks</caption>
+      <tr>
+        <th>Item</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td><img src="images/services_images/restaurant_images/orange_juice.jpeg" alt="Fresh Orange Juices" class="dish-image"></td>
+        <td>Fresh Orange Juice</td>
+        <td>Freshly squeezed, no sugar added</td>
+        <td class="price">RM10.00</td>
+      </tr>
+      <tr>
+        <td><img src="images/services_images/restaurant_images/ice_lemon_tea.jpg" alt="Ice Lemon Tea" class="dish-image"></td>
+        <td>Ice Lemon Tea</td>
+        <td>Chilled black tea with lemon</td>
+        <td class="price">RM6.00</td>
+      </tr>
+    </table>
+
+
+    <!--Desserts-->
+    <table>
+      <caption>Desserts</caption>
+      <tr>
+        <th>Item</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td><img src="images/services_images/restaurant_images/chocolate_lava_cake.jpeg" alt="Chocolate Lava Cake" class="dish-image"></td>
+        <td>Chocolate Lava Cake</td>
+        <td>Served warm with vanilla ice cream</td>
+        <td class="price">RM15.00</td>
+      </tr>
+      <tr>
+          <td><img src="images/services_images/restaurant_images/fruit_platter.jpg" alt="Fruit Platter" class="dish-image"></td>
+        <td>Fruit Platter</td>
+        <td>Seasonal fruits sliced fresh</td>
+        <td class="price">RM12.00</td>
+      </tr>
+    </table>
+  
+  </main>
+  
+
+  <!--FOOTER-->
+  <footer class="bottom-bar">
+    <div class="footer-row">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Company Logo">
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h3>Location</h3>
+          <p>HavenSquare Palace, <br>123 Oak Road, New York, <br>New York State 10036, <br>United States</p>
+        </div>
+
+        <div>
+          <h3>Follow Us</h3>
+          <p>Instagram | Facebook</p>
+        </div>
+
+        <div>
+          <a href="contact.html" class="contact-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2025 HavenSquare Palace</span>
+      <span class="footer-policy">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Service</a>
+      </span>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #f8f6ef, #fff);
+    color: #222;
+}
+
+
+/* Confirmation Page */
+.confirmation-page-main {
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+/* Container Card */
+.confirmation-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    position: relative;
+}
+
+
+/* Success Icon */
+.confirmation-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 25px;
+}
+
+
+/* Title & Message */
+.confirmation-title {
+    color: #28a745;
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.confirmation-message {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+/* Booking Details Card */
+.booking-details-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.booking-details-card h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed #e2e2e2;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item span:first-child {
+    font-weight: 600;
+    color: #444;
+}
+
+.detail-item span:last-child {
+    color: #555;
+}
+
+.detail-item.total-price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #000;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #ccc;
+}
+
+
+/* Actions Buttons */
+.confirmation-actions {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.back-home-btn,
+.print-booking-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-home-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.back-home-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.print-booking-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.print-booking-btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+
+/* Additional Info */
+.further-info {
+    font-size: 0.95em;
+    color: #777;
+    margin-top: 40px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Next Steps Section */
+.next-steps {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.next-steps h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.next-steps ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.next-steps li {
+    margin: 10px 0;
+    font-size: 1em;
+}

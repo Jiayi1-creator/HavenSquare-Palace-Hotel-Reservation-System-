@@ -1,0 +1,155 @@
+header {
+  background-color: #f8f6ef;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  color: #222;
+}
+
+body {
+  font-family: Arial, sans-serif; 
+  background-color: #fffbe6; 
+  color: #333;
+  font-size: 1.15em; 
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #bfa046; 
+  font-family: Arial, sans-serif; 
+  font-size: 2em;
+}
+
+
+/* Menu Content */
+
+/* Table Styling */
+table {
+  width: 100%;
+  table-layout: fixed; 
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 40px;
+  background-color: #fffefb; 
+  border-radius: 14px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 4px 24px rgba(180, 200, 180, 0.10);
+}
+
+caption {
+  font-size: 1.3em;
+  font-family: Arial, sans-serif; 
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: bold;
+  color: #bfa046; 
+  padding: 12px 0 0 12px;
+}
+
+th, td {
+  padding: 18px 16px;
+  border-bottom: 1px solid #f7eac6; 
+  vertical-align: middle;
+  text-align: left;
+  word-break: break-word;
+  font-family: Arial, sans-serif; 
+}
+
+th:nth-child(1), td:nth-child(1) {
+  width: 90px; 
+  text-align: center;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 22%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+  width: 48%; 
+}
+
+th:nth-child(4), td:nth-child(4) {
+  width: 15%;
+  text-align: left;      
+  padding-right: 32px;  
+}
+
+th {
+  background-color: #f9f7f3; 
+  color: #7b6f3e;            
+  font-size: 1.1em;
+  text-align: left;
+}
+
+tr:nth-child(even) td {
+  background-color: #fffbe6; 
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* Menu Dish Details */
+.dish-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #e6d8b9; 
+  background: #f3eac2;       
+}
+
+.dish-name {
+  font-weight: bold;
+  color: #7b9ea8; 
+  margin-bottom: 4px;
+  display: block;
+}
+
+.dish-desc {
+  color: #555;
+  font-size: 0.98em;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.price {
+  text-align: left;
+  font-weight: bold;
+  color: #bfa046; 
+  white-space: nowrap;
+  font-size: 1.05em;
+}
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .dish-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  table, th, td {
+    font-size: 0.95em;
+  }
+}
+
+@media print {
+  .dish-image {
+    display: none;
+  }
+
+  caption, h1 {
+    color: black;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+    padding: 0;
+  }
+}
+

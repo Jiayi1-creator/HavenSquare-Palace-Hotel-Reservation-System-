@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Let's Chat Form</title>
+  <link rel="stylesheet" href="css/contact_styling.css">
+  <script src="javascript/contact.js"></script>
+  <link rel="icon" href="images/link_icons/contact.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="form-container">
+
+    <!--Left Side of Container-->
+    <div class="form-left">
+      <h1>Let’s chat.</h1>
+      <p>We're here to help!</p>
+      <p>Whether you have questions, need assistance, or just want to know more about our hotel and services, feel free to reach out. Fill in the form and we’ll get back to you as soon as possible.</p>
+    </div>
+
+    <!--Right Side of Container-->
+    <div class="form-right">
+      <form onsubmit="return validateForm();">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name">
+          <div class="error" id="nameError"></div>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email">
+          <div class="error" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+          <select id="subject">
+            <option value="">-- Select Subject --</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+          </select>
+          <div class="error" id="subjectError"></div>
+        </div>
+
+        <div class="form-group">
+          <textarea id="message" placeholder="Your Message"></textarea>
+          <div class="error" id="messageError"></div>
+        </div>
+
+        <button class="submit-btn" type="submit">Send message</button>
+      
+      </form>
+    </div>
+
+     <a href="index.html" class="return-home"> Back to Home</a>
+
+    <div class="nav-dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot" style="opacity: 0.4;"></div>
+    </div>
+    
+  </div>
+
+</body>
+</html>
+
+

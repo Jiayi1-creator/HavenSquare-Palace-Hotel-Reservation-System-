@@ -1,0 +1,316 @@
+/* General Styling */
+body {
+  background-color: #fffbe6; 
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  color: #222;
+}
+
+main {
+  font-family: Arial, sans-serif;
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+
+
+/* Title Style */
+title {
+  text-align: center;
+  background-color: #f9f7f3;
+  color: #bfa046;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #f3eac2;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #bfa046;
+  text-align: center;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  color: #bfa046;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: #7b9ea8;
+  font-size: 1.1rem;
+}
+
+
+/* Highlights */
+.highlights {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 40px;
+}
+
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 120px;
+}
+
+.highlight-item img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.highlight-item span {
+  font-size: 0.95em;
+  text-align: center;
+}
+
+
+/* Room Listing Section */
+.room-info h2 {
+  color: #7b9ea8;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.room-info ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+/* Room Section */
+.room {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 8rem 2rem 4rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  background: #fffefb;
+  border: 1px solid #f7eac6;
+  box-shadow: 0 4px 24px rgba(180, 200, 180, 0.1);
+  align-items: stretch;
+}
+
+/* Alternating layout */
+.room.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image Container */
+.room-image {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  border: 2px solid #e6d8b9;
+  background-color: #f3eac2;
+}
+
+/* Flipped Margin for Reversed Layout */
+.room.reverse .room-image {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+/* Image */
+.room-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Room Info Block */
+.room-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Room Descriptions */
+.room-info p,
+.room-info ul,
+.room-info ul li {
+  color: #3a3a3a;
+}
+
+/* Room Price */
+.room-price {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.room-price strong {
+  color: goldenrod;
+  font-weight: 700;
+}
+
+/* Book Now Button on Rooms */
+.book-now-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: -20px 80px -30px 30px;
+}
+
+.book-now-btn {
+  display: inline-block;
+  padding: 10px 20px;         
+  background-color: #bfa046;    
+  color: #fffbe6;               
+  text-decoration: none;        
+  font-weight: bold;            
+  border-radius: 6px;           
+  border: none;                 
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #e6d8b9;    
+  color: #bfa046;  }
+
+
+/* Small Note below Amenities */
+small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #a6a6a6;
+}
+
+
+/* Facilities & Amenities Section */
+.facilities {
+  background: #fffbe6;
+  padding: 2rem 0;
+}
+
+/* Facility Container */
+.facility-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual Facility Card */
+.facility_image {
+  width: 320px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background: #fffefb;
+  border: 1px solid #f7eac6;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(180, 200, 180, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+/* Facility Image */
+.facility_image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #e6d8b9;
+  background: #f3eac2;
+  margin-bottom: 1rem;
+}
+
+/* Facility Title and Text */
+.facility_image h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #7b9ea8;
+}
+
+.facility_image p {
+  font-size: 1rem;
+  color: #3a3a3a;
+}
+
+
+/* View Menu Button for Restaurant */
+.view-menu-btn {
+  display: inline-block;
+  margin-top: 8px;            
+  padding: 8px 16px;           
+  background-color: #bfa046;   
+  color: #fffbe6;             
+  text-decoration: none;      
+  font-weight: bold;          
+  border-radius: 6px;         
+  border: none;               
+  transition: 
+    background-color 0.3s ease, 
+    color 0.3s ease;  
+}
+
+.view-menu-btn:hover {
+  background-color: #e6d8b9;   
+  color: #bfa046;              
+}
+
+
+/* Return Home Button */
+.return-home {
+  position: fixed;
+  bottom: 45px;
+  right: 30px;
+  background-color: #a67c52;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.95em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.return-home:hover {
+  background-color: #8b5e34;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .room,
+  .room.reverse {
+    flex-direction: column;
+  }
+
+  .room-image {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+@media (max-width: 900px) {
+  .facility-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .facility_image {
+    width: 90%;
+  }
+}

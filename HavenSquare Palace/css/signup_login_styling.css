@@ -1,0 +1,128 @@
+/* Auth Page Styles - For Sign Up & Login pages */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  background: #f8f6ef; 
+  padding: 2rem; 
+}
+
+/* Main Auth Box */
+.auth-box {
+  background-color: #fff;
+  padding: 2rem 2.4rem; 
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Header of Form Content */
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 1.4rem;
+  font-size: 2rem;
+  color: #333;
+  
+}
+
+
+/* Form Layout & Content */
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+}
+
+/* Labels */
+.auth-box label {
+  font-size: 0.95rem;
+  color: #333;
+  
+}
+
+/* Input fields */
+.auth-box input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fcfcfc;
+  color: #333;
+  font-size: 0.94rem;
+
+}
+
+/* Submit Button */
+.auth-box button {
+  background: #f5a623; 
+  color: #fff;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  transition: all 0.3s ease; 
+}
+
+/* Submit Button Hover */
+.auth-box button:hover {
+  background-color: #e09419; 
+}
+
+
+/* Switch Link */
+.auth-box .switch-link {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.auth-box .switch-link a {
+  color: #f5a623;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-box .switch-link a:hover {
+  text-decoration: underline;
+}
+
+
+/* Return Home Button */
+.return-home {
+  position: fixed;
+  bottom: 45px;
+  right: 30px;
+  background-color: #a67c52;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.95em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.return-home:hover {
+  background-color: #8b5e34;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+  .auth-box {
+    padding: 1.4rem;
+  }
+
+  .auth-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .auth-box input,
+  .auth-box button {
+    font-size: 0.88rem;
+  }
+}
